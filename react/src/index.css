@@ -1,0 +1,465 @@
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-bottom: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+.logo {
+ 
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: gray; 
+}
+
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.r-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.login-container {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  height: 550px;
+}
+
+.r-container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: left;
+  
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.register-container {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  height: 700px;
+}
+
+
+
+.form-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  left: 0;
+  transform: translateX(0%);
+}
+
+
+h2 {
+  margin: 0;
+  color: #333;
+}
+
+#login-form {
+  width: 70%;
+  text-align: center;
+}
+
+.loginInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, #333, #00bcd4);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid #333;
+  color: #333;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+      height: 650px;
+  }
+
+  .form-container {
+      width: 100%;
+  }
+
+  .overlay-container {
+      width: 100%;
+  }
+}
+
+
+.orders {
+  padding: 50px;
+}
+/* ****************** */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin: 10px;
+  padding: 25px;
+  padding-bottom: 75  px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table {
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+
+.field {
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#addItems{
+  padding: 100px;
+}
+
+button {
+  background-color: rgb(43, 40, 40);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ #msg {
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+
+label {
+  padding: 20px;
+}
+
+/* ................ */
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.r-container header {
+  font-size: 1.9rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.r-container #msg {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.r-container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+  padding: 0px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1.5rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1.5rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background:  rgb(43, 40, 40);
+}
+.form button:hover {
+  background: rgb(6, 6, 6);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+
+.help-main {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  
+  height: 100vh;
+  
+}
+
+.help-main header {
+
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+}
+
+
+.help-main h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.help-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  
+  
+}
+
+.member {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.member h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.member p {
+  margin: 0;
+}
