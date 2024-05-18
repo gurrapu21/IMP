@@ -1,1 +1,1 @@
-# IMP
+# Inventory Management System
